@@ -1,13 +1,11 @@
 #include "functions.hpp"
 #include "network.hpp"
 
-// SOURCE REFERENCE: https://stackoverflow.com/questions/8286668/how-to-read-mnist-data-in-c
 uint32_t swap_endian(uint32_t val) {
     val = ((val << 8) & 0xFF00FF00) | ((val >> 8) & 0xFF00FF);
     return (val << 16) | (val >> 16);
 }
 
-// SOURCE REFERENCE: https://stackoverflow.com/questions/8286668/how-to-read-mnist-data-in-c
 void read_mnist_cv(const char* image_filename, const char* label_filename, vector<arma::vec> &images, vector<int> &labels){
     // Open files
     std::ifstream image_file(image_filename, std::ios::in | std::ios::binary);
