@@ -1,6 +1,6 @@
 # MNIST-neural-network
 
-This C++ program is a neural network classifier for the MNIST handwritten digit dataset. The dataset can be downloaded from http://yann.lecun.com/exdb/mnist/. OpenCV is used to read the images. Armadillo is used for optimised matrix multiplication (BLAS).
+This C++ program is a neural network classifier for the MNIST handwritten digit dataset. The dataset can be downloaded from http://yann.lecun.com/exdb/mnist/. OpenCV is used to read the images. Armadillo is used for faster linear algebra computation (BLAS).
 
 The dataset (n = 70,000) is comprised of a training set (n = 60,0000) and a test set (n = 10,000). The network uses a quadratic cost function, sigmoid activation functions, and Xavier-initialised weights. Mini-batch gradient descent is used for training. Following the completion of a training epoch, the training set is shuffled and the network's performance is measured by evaluating the fraction of the test set accurately classified.
 
