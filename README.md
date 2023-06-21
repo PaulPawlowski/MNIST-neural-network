@@ -6,5 +6,5 @@ The dataset (n = 70,000) is comprised of a training set (n = 60,000) and a test 
 
 Typically, the network reaches around 96% accuracy on the test set within 10-20 epochs of training with a mini-batch size of 10 and a learning rate of 0.3 (On an M1 MacBook Pro, built for release with -O3, such an epoch takes ~4s).
 
-To test yourself, install the OpenCV and Amradillo libraries and configure your compiler accordingly. Filepaths for the MNIST images and labels files are specified in main.cpp.
+To test yourself, install the OpenCV and Armadillo libraries and configure your compiler accordingly. Filepaths for the MNIST images and labels files are specified in main.cpp.
 
